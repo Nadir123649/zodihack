@@ -193,7 +193,7 @@ a {
 	}
 }
 
-.card-box-section{
+.card-box-section {
 	padding-top: 80px;
 }
 .season-section {
@@ -326,11 +326,10 @@ a {
 		}
 	}
 	.links {
-		ul{
+		ul {
 			display: flex;
 			flex-direction: column;
 			gap: 12px;
-
 		}
 		ul li a {
 			font-family: "Inter";
@@ -341,6 +340,216 @@ a {
 			color: $white;
 			opacity: 0.8;
 			text-decoration: none;
+		}
+	}
+}
+
+// zodic styling
+.zodaic-section {
+	background-image: url("../images/zodic-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	.main-zodic {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	.content-zodic {
+		.start {
+			font-family: "Monad";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 103.422px;
+			line-height: 100px;
+			color: #ffffff;
+			max-width: 412px;
+			margin-bottom: 10px;
+		}
+		.end {
+			@extend .start;
+			font-size: 113.078px;
+			margin-bottom: 15px;
+		}
+		.desc-one {
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 23px;
+			color: #ffffff;
+		}
+		.desc-two {
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 23px;
+			color: #ffffff;
+			opacity: 0.8;
+		}
+		.order-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 15px;
+			background: #ffffff;
+			border-radius: 100px;
+			width: 212px;
+			height: 43px;
+			margin-top: 50px;
+			text-decoration: none;
+			span {
+				font-family: "Inter";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 19px;
+				display: flex;
+				align-items: center;
+				color: #010101;
+			}
+		}
+	}
+	.card-img {
+		position: relative;
+		.card-log {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 50px;
+			img {
+				width: 135.8px;
+				height: 88px;
+			}
+		}
+	}
+}
+
+.about-section {
+	padding: 80px 0px;
+	background-color: #0d0925;
+	h1 {
+		font-family: "Monad";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 43.627px;
+		line-height: 47px;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	p:first-of-type {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	p:last-of-type {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		color: #ffffff;
+	}
+}
+
+.author-section {
+	background-color: #0d0925;
+	padding: 30px 0px 50px 0px;
+	.main-heading {
+		font-family: "Monad";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 43.627px;
+		line-height: 47px;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	.author-main {
+		background-image: url("../images/authr-bug.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding-top: 30px;
+		border-radius: 20px;
+		.content-author {
+			max-width: 423px;
+			.author-heading {
+				font-family: "Monad";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 71.8919px;
+				line-height: 78px;
+				color: #ffffff;
+				margin-bottom: 0;
+			}
+			p {
+				font-family: "Inter";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 23px;
+				margin-top: 20px;
+				color: #ffffff;
+				opacity: 0.9;
+			}
+		}
+	}
+}
+
+.review-section {
+	background-color: #0d0925;
+	padding: 80px 0px;
+	.review-heading {
+		font-family: "Monad";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 43.627px;
+		line-height: 47px;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+	.content-review {
+		position: relative;
+		.top-desc {
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23px;
+			color: #ffffff;
+			margin-left: 35px;
+			&::before {
+				content: "“";
+				position: absolute;
+				left: 0;
+				top: -20px;
+				font-family: "Monad";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 70px;
+				line-height: 77px;
+				color: #ffffff;
+			}
+		}
+		.middle-desc {
+			@extend .top-desc;
+		}
+		.bottom-desc {
+			font-family: "Inter";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 17px;
+			text-align: right;
+			color: #ffffff;
+			opacity: 0.8;
+			margin-top: 12px;
 		}
 	}
 }

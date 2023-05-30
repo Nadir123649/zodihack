@@ -22627,4 +22627,207 @@ a:focus {
   color: #fff;
   opacity: 0.8;
   text-decoration: none;
+}
+
+.zodaic-section {
+  background-image: url("../images/zodic-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.zodaic-section .main-zodic {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.zodaic-section .content-zodic .start, .zodaic-section .content-zodic .end {
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 103.422px;
+  line-height: 100px;
+  color: #ffffff;
+  max-width: 412px;
+  margin-bottom: 10px;
+}
+.zodaic-section .content-zodic .end {
+  font-size: 113.078px;
+  margin-bottom: 15px;
+}
+.zodaic-section .content-zodic .desc-one {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.zodaic-section .content-zodic .desc-two {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+.zodaic-section .content-zodic .order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  border-radius: 100px;
+  width: 212px;
+  height: 43px;
+  margin-top: 50px;
+  text-decoration: none;
+}
+.zodaic-section .content-zodic .order-btn span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #010101;
+}
+.zodaic-section .card-img {
+  position: relative;
+}
+.zodaic-section .card-img .card-log {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.zodaic-section .card-img .card-log img {
+  width: 135.8px;
+  height: 88px;
+}
+
+.about-section {
+  padding: 80px 0px;
+  background-color: #0d0925;
+}
+.about-section h1 {
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43.627px;
+  line-height: 47px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.about-section p:first-of-type {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.about-section p:last-of-type {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.author-section {
+  background-color: #0d0925;
+  padding: 30px 0px 50px 0px;
+}
+.author-section .main-heading {
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43.627px;
+  line-height: 47px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.author-section .author-main {
+  background-image: url("../images/authr-bug.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+.author-section .author-main .content-author {
+  max-width: 423px;
+}
+.author-section .author-main .content-author .author-heading {
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 71.8919px;
+  line-height: 78px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.author-section .author-main .content-author p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 20px;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.review-section {
+  background-color: #0d0925;
+  padding: 80px 0px;
+}
+.review-section .review-heading {
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 43.627px;
+  line-height: 47px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.review-section .content-review {
+  position: relative;
+}
+.review-section .content-review .top-desc, .review-section .content-review .middle-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 35px;
+}
+.review-section .content-review .top-desc::before, .review-section .content-review .middle-desc::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -20px;
+  font-family: "Monad";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 77px;
+  color: #ffffff;
+}
+.review-section .content-review .bottom-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 12px;
 }/*# sourceMappingURL=main.css.map */
