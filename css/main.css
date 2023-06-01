@@ -22370,6 +22370,35 @@ a:focus {
   bottom: 0;
   z-index: 999;
 }
+.main-wrapper .sidebar .top-sidebar .user-container {
+  position: relative;
+  display: inline-block;
+}
+.main-wrapper .sidebar .top-sidebar .menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+.main-wrapper .sidebar .top-sidebar .menu-container.show {
+  display: block;
+}
+.main-wrapper .sidebar .top-sidebar .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.main-wrapper .sidebar .top-sidebar .menu li {
+  margin-bottom: 8px;
+}
+.main-wrapper .sidebar .top-sidebar .menu li a {
+  text-decoration: none;
+  color: #333;
+}
 .main-wrapper .sidebar .bottom-sidbar .icon-favour {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -22630,16 +22659,14 @@ a:focus {
 }
 
 .zodaic-section {
-  background-image: url("../images/zodic-bg.png");
+  background-image: url("../images/zodic-sec-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.zodaic-section .main-zodic {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.zodaic-section .center-logo img {
+  width: 135.8px;
+  height: 88px;
 }
 .zodaic-section .content-zodic .start, .zodaic-section .content-zodic .end {
   font-family: "Monad";
@@ -22652,7 +22679,7 @@ a:focus {
   margin-bottom: 10px;
 }
 .zodaic-section .content-zodic .end {
-  font-size: 113.078px;
+  font-size: 122.078px;
   margin-bottom: 15px;
 }
 .zodaic-section .content-zodic .desc-one {

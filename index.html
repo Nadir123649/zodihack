@@ -17,8 +17,24 @@
                 <div class="top-sidebar d-flex flex-column gap-5 justify-content-centers align-items-center pt-2">
                     <a href="#">
                         <img src="./images/logo-right.png" alt="logo">
+                        <span></span>
                     </a>
-                    <img id="client-image" src="./images/Profile Avatar.png" alt="Client Image">
+                    <div class="user-container">
+                        <img id="client-image" src="./images/Profile Avatar.png" alt="Client Image">
+                        <div class="menu-container" id="menu-container">
+                            <ul class="menu">
+                                <li>
+                                    <a href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="bottom-sidbar d-flex flex-column gap-3 align-items-center justify-content-center pb-5">
                     <a href="" class="icon-favour">
@@ -88,7 +104,7 @@
                             <div class="right-box">
                                 <img src="./images/book-2 (1).png" alt="book-2">
                                 <button class="but-btn" onclick="window.location.href = 'book.html';">
-                                    <span>BUY NOW</span>    
+                                    <span>BUY NOW</span>
                                     <img src="./images/right-arrow.png" alt="right-arrow">
                                 </button>
                             </div>
@@ -316,5 +332,6 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/slick.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
     </body>
 </html>

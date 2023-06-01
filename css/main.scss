@@ -7,6 +7,7 @@ $breakpoints: (
 	"widescreen": 1320px,
 	"widescreen-large": 1440px,
 );
+$breakpoint-medium: 768px;
 
 @import "vendors/include-media";
 @import "vendors/normalize";
@@ -71,6 +72,42 @@ a {
 		top: 0;
 		bottom: 0;
 		z-index: 999;
+		.top-sidebar {
+			.user-container {
+				position: relative;
+				display: inline-block;
+			}
+
+			.menu-container {
+				display: none;
+				position: absolute;
+				top: 100%;
+				right: 0;
+				background-color: #fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				padding: 8px;
+			}
+
+			.menu-container.show {
+				display: block;
+			}
+
+			.menu {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.menu li {
+				margin-bottom: 8px;
+			}
+
+			.menu li a {
+				text-decoration: none;
+				color: #333;
+			}
+		}
 		.bottom-sidbar {
 			.icon-favour {
 				background: rgba(255, 255, 255, 0.12);
@@ -346,15 +383,15 @@ a {
 
 // zodic styling
 .zodaic-section {
-	background-image: url("../images/zodic-bg.png");
+	background-image: url("../images/zodic-sec-bg.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	.main-zodic {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		align-items: center;
+	.center-logo {
+		img {
+			width: 135.8px;
+			height: 88px;
+		}
 	}
 	.content-zodic {
 		.start {
@@ -369,7 +406,8 @@ a {
 		}
 		.end {
 			@extend .start;
-			font-size: 113.078px;
+
+			font-size: 122.078px;
 			margin-bottom: 15px;
 		}
 		.desc-one {
